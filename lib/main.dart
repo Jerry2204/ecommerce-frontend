@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shamo/pages/signin_page.dart';
+import 'package:shamo/pages/signup_page.dart';
 import 'package:shamo/pages/splash_page.dart';
 import 'theme.dart';
 
@@ -9,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: {
-        '/': (context) => SplashPage(),
-        '/sign-in': (context) => SignInPage(),
-      }
-    );
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/',
+        routes: {
+          '/': (context) => SplashPage(),
+          '/sign-in': (context) => SignInPage(),
+          '/sign-up': (context) => SignUpPage(),
+        });
   }
 }
