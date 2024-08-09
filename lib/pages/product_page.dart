@@ -1,8 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:shamo/models/product_model.dart';
 import 'package:shamo/theme.dart';
 
 class ProductPage extends StatefulWidget {
+  final ProductModel product;
+  ProductPage(this.product);
+
   @override
   State<ProductPage> createState() => _ProductPageState();
 }
@@ -235,14 +239,14 @@ class _ProductPageState extends State<ProductPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'TERREX URBAN LOW',
+                          widget.product.name ?? '',
                           style: primaryTextStyle.copyWith(
                             fontSize: 18,
                             fontWeight: semibold,
                           ),
                         ),
                         Text(
-                          'Hiking',
+                          widget.product.category?.name ?? '',
                           style: secondaryTextStyle.copyWith(
                             fontSize: 12,
                           ),
@@ -307,7 +311,7 @@ class _ProductPageState extends State<ProductPage> {
                     style: primaryTextStyle,
                   ),
                   Text(
-                    '\$143,98',
+                    '\$${widget.product.price}',
                     style: priceTextStyle.copyWith(
                       fontSize: 16,
                       fontWeight: semibold,
@@ -334,7 +338,7 @@ class _ProductPageState extends State<ProductPage> {
                     height: 12,
                   ),
                   Text(
-                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+                    widget.product.description ?? '',
                     style: subtitleTextStyle.copyWith(
                       fontWeight: light,
                     ),
