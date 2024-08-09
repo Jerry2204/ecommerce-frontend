@@ -10,7 +10,7 @@ class ProductModel {
   CategoryModel? category;
   DateTime? createdAt;
   DateTime? updatedAt;
-  List<GalleryModel>? galleries;
+  List<GalleryModel?>? galleries;
 
   ProductModel({
     this.id,
@@ -45,8 +45,8 @@ class ProductModel {
       'price': price,
       'description': description,
       'tags': tags,
-      'category': category!.toJson(),
-      'galleries': galleries!.map((gallery) => gallery.toJson()).toList(),
+      'category': category?.toJson(),
+      'galleries': galleries!.map((gallery) => gallery?.toJson()).toList(),
       'createdAt': createdAt.toString(),
       'updatedAt': updatedAt.toString(),
     };

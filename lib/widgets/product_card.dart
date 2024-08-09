@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:shamo/models/product_model.dart';
 import 'package:shamo/theme.dart';
 
 class ProductCard extends StatelessWidget {
+  final ProductModel product;
+  ProductCard(this.product);
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -43,7 +47,7 @@ class ProductCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Hiking',
+                    product.category!.name ?? '',
                     style: secondaryTextStyle.copyWith(
                       fontSize: 12,
                     ),
