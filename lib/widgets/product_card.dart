@@ -4,6 +4,7 @@ import 'package:shamo/theme.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;
+
   ProductCard(this.product);
 
   @override
@@ -56,18 +57,19 @@ class ProductCard extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    'Court Vision 2.0',
+                    product.name ?? '',
                     style: blackTextStyle.copyWith(
                       fontSize: 18,
                       fontWeight: semibold,
                     ),
                     overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
                   ),
                   SizedBox(
                     height: 6,
                   ),
                   Text(
-                    '\$58.67',
+                    '\$${product.price}',
                     style: priceTextStyle.copyWith(
                       fontWeight: medium,
                     ),
