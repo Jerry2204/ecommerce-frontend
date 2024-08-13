@@ -27,9 +27,12 @@ class AuthProvider with ChangeNotifier {
   }
 
   Future<bool> login({String? email, String? password}) async {
+    print(email);
+    print(password);
     try {
       UserModel user =
           await AuthService().login(email: email, password: password);
+      print('jerry');
 
       _user = user;
       return true;
