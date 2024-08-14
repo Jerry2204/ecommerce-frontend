@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050649860152",
+    "project_id": "ecommerce-shamo",
+    "storage_bucket": "ecommerce-shamo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050649860152:android:6a5e5ba9248857ab13eecd",
+        "android_client_info": {
+          "package_name": "com.jerry.shamo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmL36vrUfV8IEqNPKzNYq3wKwGZiF_hjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

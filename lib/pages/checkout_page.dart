@@ -252,7 +252,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 ),
                 Divider(
                   thickness: 1,
-                  color: Color(0xff2e3141),
+                  color: Color.fromARGB(255, 59, 65, 98),
                 ),
                 SizedBox(
                   height: 10,
@@ -287,7 +287,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
           ),
           isLoading
               ? Container(
-                  margin: EdgeInsets.only(bottom: 30),
+                  margin: EdgeInsets.only(
+                    bottom: 30,
+                  ),
                   child: LoadingButton(),
                 )
               : Container(
