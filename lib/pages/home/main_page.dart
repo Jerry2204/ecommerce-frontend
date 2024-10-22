@@ -50,13 +50,9 @@ class _MainPageState extends State<MainPage> {
             items: [
               BottomNavigationBarItem(
                 icon: Container(
-                  margin: EdgeInsets.only(
-                    top: 20,
-                    bottom: 10,
-                  ),
                   child: Image.asset(
                     'assets/icon_home.png',
-                    width: 21,
+                    width: 18,
                     color: currentIndex == 0 ? primaryColor : Color(0xff808191),
                   ),
                 ),
@@ -64,13 +60,9 @@ class _MainPageState extends State<MainPage> {
               ),
               BottomNavigationBarItem(
                 icon: Container(
-                  margin: EdgeInsets.only(
-                    top: 20,
-                    bottom: 10,
-                  ),
                   child: Image.asset(
                     'assets/icon_chat.png',
-                    width: 20,
+                    width: 18,
                     color: currentIndex == 1 ? primaryColor : Color(0xff808191),
                   ),
                 ),
@@ -78,13 +70,9 @@ class _MainPageState extends State<MainPage> {
               ),
               BottomNavigationBarItem(
                 icon: Container(
-                  margin: EdgeInsets.only(
-                    top: 20,
-                    bottom: 10,
-                  ),
                   child: Image.asset(
                     'assets/icon_wishlist.png',
-                    width: 20,
+                    width: 18,
                     color: currentIndex == 2 ? primaryColor : Color(0xff808191),
                   ),
                 ),
@@ -92,13 +80,9 @@ class _MainPageState extends State<MainPage> {
               ),
               BottomNavigationBarItem(
                 icon: Container(
-                  margin: EdgeInsets.only(
-                    top: 20,
-                    bottom: 10,
-                  ),
                   child: Image.asset(
                     'assets/icon_profile.png',
-                    width: 20,
+                    width: 18,
                     color: currentIndex == 3 ? primaryColor : Color(0xff808191),
                   ),
                 ),
