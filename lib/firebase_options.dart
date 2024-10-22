@@ -40,7 +40,7 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
+  static final FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyDoGKpVWpd6LHtkzSyt0Ql58Uy7vRrN6wE',
     appId: '1:1050649860152:web:f06fa538e3a0b13b13eecd',
     messagingSenderId: '1050649860152',
@@ -50,7 +50,7 @@ class DefaultFirebaseOptions {
     measurementId: 'G-8WR1JKWYB2',
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
+  static final FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBmL36vrUfV8IEqNPKzNYq3wKwGZiF_hjQ',
     appId: '1:1050649860152:android:6a5e5ba9248857ab13eecd',
     messagingSenderId: '1050649860152',
@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'ecommerce-shamo.appspot.com',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
+  static final FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCFhNN6_bddcb3_R7LOjSDYSKty-CCKQ1M',
     appId: '1:1050649860152:ios:612796111ce3b6fd13eecd',
     messagingSenderId: '1050649860152',
@@ -67,7 +67,7 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.jerry.shamo',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
+  static final FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyCFhNN6_bddcb3_R7LOjSDYSKty-CCKQ1M',
     appId: '1:1050649860152:ios:7717579dd94ca50113eecd',
     messagingSenderId: '1050649860152',
@@ -76,7 +76,7 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.example.shamo',
   );
 
-  static const FirebaseOptions windows = FirebaseOptions(
+  static final FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyDoGKpVWpd6LHtkzSyt0Ql58Uy7vRrN6wE',
     appId: '1:1050649860152:web:155116a60658263413eecd',
     messagingSenderId: '1050649860152',
